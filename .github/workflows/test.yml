@@ -9,5 +9,5 @@ jobs:
         id: superdataset
         uses: templateflow/actions-template@main
         env:
-          SACRED_SECRET: ${{ secrets.TEST_SECRET }}
+          SECRET_KEY: ${{ secrets.TEST_SECRET }}
 
