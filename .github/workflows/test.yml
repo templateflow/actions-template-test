@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: Hello world action step
-        id: hello
-        uses: templateflow/actions-template@v0.0.1
-        with:
-          ssh-private-key: testkey
+      - name: "Update TemplateFlow's superdataset"
+        id: superdataset
+        uses: templateflow/actions-template@main
+        env:
+          SACRED_SECRET: ${{ secrets.TEST_SECRET }}
 
